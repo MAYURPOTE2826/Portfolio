@@ -1,29 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About | Mayur Pote</title>
-    <link rel="stylesheet" href="/static/style.css">
+  <meta charset="UTF-8">
+  <title>About | Mayur Pote</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #0d6efd;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover { color: #ffc107; }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #0d6efd;
+      margin-bottom: 20px;
+      border-left: 5px solid #ffc107;
+      padding-left: 10px;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .intro img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #0d6efd;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .intro-text {
+      flex: 1;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      color: #0d6efd;
+      border-left: 5px solid #ffc107;
+      padding-left: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style: square;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d6efd;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <div><strong>Mayur Pote</strong></div>
-        <div>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/projects">Projects</a>
-            <a href="/contact">Contact</a>
-            <a href="/resume">Resume</a>
-        </div>
-    </nav>
-
-    <div class="container">
-        <h1>About Me</h1>
-        <p>Hello! I’m <strong>Mayur Pote</strong>, I’m a final-year B.E. Computer Engineering student with a strong passion for Machine Learning, Python, and Data Science. I enjoy solving real-world problems using data-driven solutions and building intelligent systems that make a real impact. Alongside ML, I'm also skilled in web development and love creating user-friendly applications. I'm always eager to learn, explore new technologies, and work on innovative projects that blend logic with creativity..</p>
-
-        <p>I enjoy solving real-world problems, especially in real world  and predictive analysis using data. I'm skilled in Python, Machine Learning, and Full Stack Web Development.</p>
-
-        <p>Currently working on a <strong>“Resillient architecture for self healing mechanism”</strong> that automatic repair software and avoid crashes of software.</p>
+  <nav>
+    <div><strong>Mayur Pote</strong></div>
+    <div>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
+      <a href="/resume" target="_blank">Resume</a>
     </div>
+  </nav>
+
+  <div class="container">
+    <div class="intro">
+      <img src="https://via.placeholder.com/180" alt="Mayur Pote Profile Photo">
+      <div class="intro-text">
+        <h1>About Me</h1>
+        <p>Hello! I’m <strong>Mayur Pote</strong>, a final-year <strong>B.E. Computer Engineering</strong> student with a strong passion for <strong>Machine Learning, Python, and Data Science</strong>.  
+        I love turning raw data into actionable insights and building intelligent systems that make a real impact.</p>
+      </div>
+    </div>
+
+    <p>Outside of ML, I enjoy working on <strong>web development</strong> and creating user-friendly applications.  
+       I am always eager to explore new technologies, take on challenges, and contribute to meaningful projects.</p>
+
+    <h2>What I’m Skilled At</h2>
+    <ul>
+      <li>Machine Learning & Data Science (Scikit-Learn, Pandas, NumPy)</li>
+      <li>Python Programming & Problem Solving</li>
+      <li>Web Development (HTML, CSS, Flask)</li>
+      <li>Data Preprocessing & Predictive Analytics</li>
+      <li>Tools: Git, Docker, Linux</li>
+    </ul>
+
+    <h2>Currently Working On</h2>
+    <p>
+      <strong>Resilient Architecture for Self-Healing Mechanism</strong> – a project that uses Machine Learning to detect software faults and automatically repair them, ensuring systems remain reliable and crash-free.
+    </p>
+
+    <h2>Beyond Academics</h2>
+    <p>
+      I believe in continuous learning, teamwork, and innovation.  
+      My goal is to start my career in the field of <strong>Data Science / ML Engineering</strong> where I can apply my skills, grow professionally, and contribute to impactful solutions.
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 Mayur Pote | Designed with ❤️</p>
+  </footer>
 </body>
 </html>

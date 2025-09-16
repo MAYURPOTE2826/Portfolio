@@ -1,32 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Mayur Pote | Portfolio</title>
-    <link rel="stylesheet" href="/static/style.css">
+  <meta charset="UTF-8">
+  <title>Mayur Pote | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #0d6efd;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffc107;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #0d6efd;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin: 20px 0;
+      color: #444;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: #0d6efd;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #0b5ed7;
+    }
+
+    section {
+      margin: 50px auto;
+      text-align: left;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #0d6efd;
+      border-left: 5px solid #ffc107;
+      padding-left: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style: square;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d6efd;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <div><strong>Mayur Pote</strong></div>
-        <div>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/projects">Projects</a>
-            <a href="/contact">Contact</a>
-            <a href="/resume">Resume</a>
-        </div>
-    </nav>
-
-    <div class="container">
-        <h1>Hello 👋, I'm Mayur Pote</h1>
-        <p>I’m a final-year B.E. Computer Engineering student with a strong passion for Machine Learning, Python, and Data Science. I enjoy solving real-world problems using data-driven solutions and building intelligent systems that make a real impact. Alongside ML, I'm also skilled in web development and love creating user-friendly applications. I'm always eager to learn, explore new technologies, and work on innovative projects that blend logic with creativity.</p>
-        
-        <a class="button" href="/projects">See My Projects</a>
-        <br><br>
-        <p>
-            <a href="https://www.linkedin.com/in/mayur-pote-a4a420257" class="button" target="_blank">LinkedIn</a>
-            <a href="https://github.com/MAYURPOTE2826" class="button" target="_blank">GitHub</a>
-        </p>
+  <nav>
+    <div><strong>Mayur Pote</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="/resume" target="_blank">Resume</a>
     </div>
+  </nav>
+
+  <div class="container">
+    <h1>Hello 👋, I'm Mayur Pote</h1>
+    <p>I’m a final-year <strong>B.E. Computer Engineering</strong> student passionate about <strong>Machine Learning, Data Science, and Python</strong>.  
+       I love solving real-world problems with data-driven solutions and building applications that create impact.  
+       Alongside ML, I also enjoy <strong>web development</strong> and designing user-friendly applications.</p>
+    
+    <a class="button" href="#projects">See My Projects</a>
+    <a class="button" href="https://www.linkedin.com/in/mayur-pote-a4a420257" target="_blank">LinkedIn</a>
+    <a class="button" href="https://github.com/MAYURPOTE2826" target="_blank">GitHub</a>
+  </div>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a fresher aspiring to start my career in <strong>Machine Learning & Data Science</strong>.  
+        My focus is on developing intelligent, scalable, and impactful software systems.  
+        I thrive in collaborative environments and am always eager to learn and contribute to innovative projects.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Programming:</strong> Python, Java, C++</li>
+        <li><strong>Machine Learning:</strong> Scikit-Learn, Pandas, NumPy, Matplotlib</li>
+        <li><strong>Data Handling:</strong> Data Preprocessing, Feature Engineering, Model Training</li>
+        <li><strong>Web Development:</strong> HTML, CSS, Flask</li>
+        <li><strong>Tools:</strong> Git, Docker, Linux</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Highlighted Projects</h2>
+      <ul>
+        <li><strong>Patient Health Risk Score System:</strong> ML-based system to analyze vitals and predict health risks in real time.</li>
+        <li><strong>Resilient Architecture for Self-Healing Mechanism:</strong> Self-healing system using ML (Isolation Forest + Random Forest) to detect and recover from software faults.</li>
+        <li><strong>Portfolio Website:</strong> A personal portfolio website built with HTML, CSS, and Flask.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:potemayur2826@gmail.com">potemayur2826@gmail.com</a></p>
+      <p>📍 Pune, Maharashtra, India</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Mayur Pote | Designed with ❤️</p>
+  </footer>
 </body>
 </html>

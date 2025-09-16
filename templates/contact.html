@@ -1,42 +1,91 @@
 {% include 'nav.html' %}
+
 <div class="container">
-    <h1>Contact Me</h1>
-    <form method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact | Mayur Pote</title>
-    <link rel="stylesheet" href="/static/style.css">
-</head>
-<body>
-    <nav>
-        <!-- <div><strong>Mayur Pote</strong></div>
-        <div>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/projects">Projects</a>
-            <a href="/contact">Contact</a>
-            <a href="/resume">Resume</a>
-        </div> -->
-    </nav>
+  <h1>Contact Me</h1>
+  <p>Let’s connect! I’m open to internships, entry-level opportunities, and collaborations.  
+     Feel free to drop me a message or reach me directly via email or LinkedIn.</p>
 
-    <div class="container">
-        <h1>Contact Me</h1>
-        <p>Let's connect! I'm open to internships, projects, and collaborations.</p>
+  <form method="post" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 
-        <form method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-</body>
-</html>
-
+  <div class="contact-info">
+    <p>📧 Email: <a href="mailto:potemayur2826@gmail.com">potemayur2826@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/mayur-pote-a4a420257" target="_blank">linkedin.com/in/mayur-pote</a></p>
+    <p>💻 GitHub: <a href="https://github.com/MAYURPOTE2826" target="_blank">github.com/MAYURPOTE2826</a></p>
+  </div>
 </div>
+
+<style>
+  .container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  }
+
+  h1 {
+    color: #0d6efd;
+    margin-bottom: 15px;
+  }
+
+  p { margin-bottom: 20px; color: #444; }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border 0.3s ease;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #0d6efd;
+    outline: none;
+  }
+
+  .contact-form button {
+    background: #0d6efd;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background: #0b5ed7;
+  }
+
+  .contact-info {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    font-size: 1rem;
+  }
+
+  .contact-info a {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+</style>

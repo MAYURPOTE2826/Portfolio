@@ -1,10 +1,64 @@
-<nav>
-    <div><strong>Mayur Pote</strong></div>
-    <div>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
-        <a href="/resume">Resume</a>
-    </div>
+<nav class="navbar">
+  <div class="logo">
+    <strong>Mayur Pote</strong>
+  </div>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+    <a href="/resume" target="_blank">Resume</a>
+  </div>
 </nav>
+
+<style>
+  .navbar {
+    background: #0d6efd;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+
+  .navbar .logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .navbar .nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .navbar .nav-links a:hover {
+    color: #ffc107;
+  }
+
+  /* Responsive: Mobile View */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+    }
+
+    .navbar .nav-links {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .navbar .nav-links a {
+      margin: 8px 0;
+    }
+  }
+</style>
